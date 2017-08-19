@@ -1,3 +1,5 @@
+#!/bin/bash
+
 NOW=$(date +"%m-%d-%Y-%H-%M-%S")
 OUTFILE="./log/$NOW.log"
 

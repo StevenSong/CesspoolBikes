@@ -3,3 +3,6 @@
 
 # Pem Files
 *.pem
+
+# Ppk Files
+*.ppk
