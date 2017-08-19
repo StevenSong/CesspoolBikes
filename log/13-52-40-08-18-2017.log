@@ -1,0 +1,9 @@
+********************************************
+
+Server started at 13-52-40-08-18-2017
+Server started on port: 8080
+(node:4536) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Can't use $or with String.
+(node:4536) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+Server stopped at 13-53-50-08-18-2017
+
+********************************************

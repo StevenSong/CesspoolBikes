@@ -1,0 +1,18 @@
+********************************************
+
+Server started at 16-28-01-08-18-2017
+Server started on port: 8080
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+ReferenceError: users is not defined
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\routes\index.js:48:36
+    at model.Query.<anonymous> (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\mongoose\lib\model.js:3822:16)
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\kareem\index.js:273:21
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\kareem\index.js:131:16
+    at _combinedTickCallback (internal/process/next_tick.js:95:7)
+    at process._tickCallback (internal/process/next_tick.js:161:9)
+Server stopped at 16-28-15-08-18-2017
+
+********************************************

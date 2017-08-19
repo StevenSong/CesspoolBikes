@@ -1,0 +1,53 @@
+********************************************
+
+Server started at 12-05-35-08-18-2017
+Server started on port: 8080
+[ [ { _id: 59964a6ce012d97bcc1decdb,
+      name: 'the best bike',
+      location: 'Awren',
+      available: true } ],
+  [ { _id: 59970e46e012d97bcc1df9fd,
+      name: 'Alast',
+      location: 'home',
+      available: true },
+    { _id: 59963e0ce012d97bcc1de891,
+      name: 'test',
+      combination: '1234',
+      location: 'home',
+      available: true },
+    { _id: 599682c2e012d97bcc1df7a5,
+      name: 'test2',
+      combination: '1234',
+      location: 'home',
+      available: true } ],
+  [ { _id: 5996498ee012d97bcc1dec84,
+      name: 'Speed Demon',
+      combination: 'none of yo business',
+      location: 'up ya bum',
+      available: true } ] ]
+[ [ { _id: 59964a6ce012d97bcc1decdb,
+      name: 'the best bike',
+      location: 'Awren',
+      available: true } ],
+  [ { _id: 59970e46e012d97bcc1df9fd,
+      name: 'Alast',
+      location: 'home',
+      available: true },
+    { _id: 59963e0ce012d97bcc1de891,
+      name: 'test',
+      combination: '1234',
+      location: 'home',
+      available: true },
+    { _id: 599682c2e012d97bcc1df7a5,
+      name: 'test2',
+      combination: '1234',
+      location: 'home',
+      available: true } ],
+  [ { _id: 5996498ee012d97bcc1dec84,
+      name: 'Speed Demon',
+      combination: 'none of yo business',
+      location: 'up ya bum',
+      available: true } ] ]
+Server stopped at 12-07-45-08-18-2017
+
+********************************************

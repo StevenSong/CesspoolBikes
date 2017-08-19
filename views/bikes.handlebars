@@ -1,0 +1,17 @@
+<h1 class="text-center text-muted">Select a bike to borrow</h1>
+<table class="table table-hover table-striped">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Bike</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each bikes}}
+            <tr onclick="document.location = '/borrow?bike_id={{this._id}}'">
+                <td>{{this.name}}</td>
+                <td>{{this.location}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

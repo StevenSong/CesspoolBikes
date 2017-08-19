@@ -1,0 +1,17 @@
+********************************************
+
+Server started at 02-07-13-08-18-2017
+Server started on port: 8080
+{ __v: 0,
+  name: '1',
+  email: '1@1.com',
+  username: '1',
+  password: '$2a$10$SezGX3zxmnGPGl7f10nXMu3.I2kwsOVMQlnWBxApWqPrQCa9P1v0e',
+  bike: '',
+  _id: 599684217b9dfc3bd8460fc8 }
+[ { location: 'Awren', list: [ 'the best bike' ] },
+  { location: 'home', list: [ 'test', 'test2' ] },
+  { location: 'up ya bum', list: [ 'Speed Demon' ] } ]
+Server stopped at 02-08-18-08-18-2017
+
+********************************************

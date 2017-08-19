@@ -1,0 +1,21 @@
+<h1 class="text-center text-muted">Select a bike to borrow</h1>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/borrow">
+  <div class="form-group">
+    <select class="form-control custom-select" name="bikeSelect">
+        <option value="" selected disabled hidden>Select a bike</option>
+        {{#each bikes}}
+            <optgroup label="{{this.[0].location}}">
+                {{#each this}}
+                    <option value={{this._id}} {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+                {{/each}}
+            </optgroup>
+        {{/each}}
+    </select>
+  </div>
+  <button type="submit" class="btn btn-success btn-block">Borrow</button>
+</form>

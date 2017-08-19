@@ -1,0 +1,16 @@
+********************************************
+
+Server started at 01-08-44-08-18-2017
+Server started on port: 8080
+Error: Must pass iterator to #each
+    at Object.<anonymous> (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\handlebars\dist\cjs\handlebars\helpers\each.js:17:13)
+    at Object.eval [as main] (eval at createFunctionContext (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:8:31)
+    at main (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\handlebars\dist\cjs\handlebars\runtime.js:175:32)
+    at ret (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\handlebars\dist\cjs\handlebars\runtime.js:178:12)
+    at ret (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:526:21)
+    at ExpressHandlebars._renderTemplate (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\express-handlebars\lib\express-handlebars.js:247:12)
+    at ExpressHandlebars.<anonymous> (C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\express-handlebars\lib\express-handlebars.js:173:21)
+    at <anonymous>
+Server stopped at 01-21-21-08-18-2017
+
+********************************************

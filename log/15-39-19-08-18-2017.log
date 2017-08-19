@@ -1,0 +1,21 @@
+********************************************
+
+Server started at 15-39-19-08-18-2017
+Server started on port: 8080
+{ _id: 59970e46e012d97bcc1df9fd,
+  name: 'Alast',
+  location: 'home',
+  rider: '599684217b9dfc3bd8460fc8',
+  combination: '' }
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: Cannot read property 'name' of undefined
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\routes\index.js:256:28
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\mongoose\lib\query.js:2916:18
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+Server stopped at 16-07-30-08-18-2017
+
+********************************************

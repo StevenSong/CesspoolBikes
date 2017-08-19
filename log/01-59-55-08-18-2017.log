@@ -1,0 +1,13 @@
+********************************************
+
+Server started at 01-59-55-08-18-2017
+Server started on port: 8080
+[ { location: 'Awren', list: [ [Object] ] },
+  { location: 'home', list: [ [Object] ] },
+  { location: 'up ya bum', list: [ [Object] ] } ]
+[ { location: 'Awren', list: [ [Object] ] },
+  { location: 'home', list: [ [Object], [Object] ] },
+  { location: 'up ya bum', list: [ [Object] ] } ]
+Server stopped at 02-03-02-08-18-2017
+
+********************************************

@@ -1,0 +1,16 @@
+********************************************
+
+Server started at 15-34-53-08-18-2017
+Server started on port: 8080
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: Cannot read property 'name' of undefined
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\routes\index.js:255:28
+    at C:\Users\Steven\Google Drive\Projects\CesspoolBikes\node_modules\mongoose\lib\query.js:2916:18
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+Server stopped at 15-35-03-08-18-2017
+
+********************************************

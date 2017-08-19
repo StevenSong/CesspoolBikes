@@ -1,0 +1,18 @@
+<h1 class="text-center text-muted">Return a Bike</h1>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<p class="text-center text-muted">You are currently borrowing <span class="text-primary text-weight-bold">{{bikeName}}</span>. To return the bike, take it to one of the locations listed below, lock it, and complete this form.</p>
+<form method="post" action="/return">
+  <div class="form-group">
+    <select class="form-control custom-select" name="locationSelect">
+    <option value="" disabled selected hidden>Select a return location</option>
+    {{#each locations}}
+        <option value={{this.name}}>{{this.name}}</option>
+    {{/each}}
+    </select>
+  </div>
+  <button type="submit" class="btn btn-success btn-block">Return</button>
+</form>

@@ -1,0 +1,15 @@
+<p class="text-center text-muted">You are currently borrowing <span class="text-primary text-weight-bold">{{bike.name}}</span>. Please return the bike after you are done with it.</p>
+<table class="table borderless">
+    <tr>
+        <td class="text-muted text-right align-middle"><h6>Bike</h6></td>
+        <td class="text-primary"><h1>{{bike.name}}</h1></td>
+    </tr>
+    <tr>
+        <td class="text-muted text-right align-middle"><h6>Combo</h6></td>
+        <td class="text-primary"><h1>{{bike.combination}}</h1></td>
+    </tr>
+</table>
+
+<form method="post" action="/info">
+    <button type="submit" class="btn btn-success btn-block">Return Bike</button>
+</form>
