@@ -1,5 +1,5 @@
 const PORT = 8080;
-const PRIVATE_ADDRESS = "172.31.46.229";
+const PRIVATE_ADDRESS = "172.31.28.221";
 
 // requires
 var express = require("express");
