@@ -1,4 +1,5 @@
 const PORT = 8080;
+const PRIVATE_ADDRESS = 172.31.46.229;
 
 // requires
 var express = require("express");
@@ -120,7 +121,7 @@ var server = http.createServer(app);
 // 	key: fs.readFileSync(path.join(__dirname, "/ssl/key.pem"))
 // },app);
 
-server.listen(PORT, "172.31.46.229", function()
+server.listen(PORT, PRIVATE_ADDRESS, function()
 {
 	console.log("Server started on port: " + PORT);
 });
