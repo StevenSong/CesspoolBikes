@@ -120,7 +120,7 @@ var server = http.createServer(app);
 // 	key: fs.readFileSync(path.join(__dirname, "/ssl/key.pem"))
 // },app);
 
-server.listen(PORT, function()
+server.listen(PORT, "172.31.46.229", function()
 {
 	console.log("Server started on port: " + PORT);
 });
