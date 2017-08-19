@@ -1,4 +1,4 @@
-const PORT = 8080;
+const PORT = 80;
 
 // requires
 var express = require("express");
