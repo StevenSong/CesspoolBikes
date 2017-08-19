@@ -1,4 +1,4 @@
-NOW=$(date +"%H-%M-%S-%m-%d-%Y")
+NOW=$(date +"%m-%d-%Y-%H-%M-%S")
 OUTFILE="./log/$NOW.log"
 
 printf "********************************************\n\n" 2>&1 | tee -a $OUTFILE

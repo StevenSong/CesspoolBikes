@@ -11,7 +11,8 @@ var mongo = require("mongodb");
 var mongoose = require("mongoose");
 var passport = require("passport");
 var localStrategy = require("passport-local").Strategy;
-var https = require("https");
+var http = require("http");
+//var https = require("https");
 var path = require("path");
 var fs = require("fs");
 var User = require(path.join(__dirname, "model", "user"));
@@ -111,10 +112,13 @@ app.use("/", routes);
 app.use(express.static(path.join(__dirname, "public")));
 
 // server start
-var server = https.createServer({
-	cert: fs.readFileSync(path.join(__dirname, "/ssl/cert.pem")),
-	key: fs.readFileSync(path.join(__dirname, "/ssl/key.pem"))
-},app);
+
+var server = http.createServer(app);
+
+// var server = https.createServer({
+// 	cert: fs.readFileSync(path.join(__dirname, "/ssl/cert.pem")),
+// 	key: fs.readFileSync(path.join(__dirname, "/ssl/key.pem"))
+// },app);
 
 server.listen(PORT, function()
 {

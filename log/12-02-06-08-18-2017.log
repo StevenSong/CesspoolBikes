@@ -1,9 +1,0 @@
-********************************************
-
-Server started at 12-02-06-08-18-2017
-Server started on port: 8080
-(node:5232) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): TypeError: Cannot set property '0' of undefined
-(node:5232) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-Server stopped at 12-02-25-08-18-2017
-
-********************************************
