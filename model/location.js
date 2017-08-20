@@ -9,3 +9,8 @@ var LocationSchema = mongoose.Schema({
 });
 
 var Location = module.exports = mongoose.model("Location", LocationSchema);
+
+module.exports.createLocation = function(newLocation, callback)
+{
+    newLocation.save(callback);
+}

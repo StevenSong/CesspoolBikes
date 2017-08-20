@@ -11,6 +11,11 @@
         <nav>
           <ul class="nav nav-pills float-right">
             {{#if user}}
+                {{#if user.admin}}
+                    <li class="nav-item">
+                      <a class="nav-link" href="/admin">Admin Panel</a>
+                    </li>
+                {{/if}}
                 {{#if user.hasBike}}
                     <li class="nav-item">
                       <a class="nav-link" href="/info">Bike Info</a>
