@@ -22,6 +22,12 @@ var UserSchema = mongoose.Schema({
     },
     hasBike: {
         type: Boolean
+    },
+    admin: {
+        type: Boolean
+    },
+    approved: {
+        type: Boolean
     }
 });
 

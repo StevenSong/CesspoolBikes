@@ -1,0 +1,81 @@
+{{#if anchor}}
+    <script>
+        window.onload = window.location.hash = "#{{anchor}}";
+    </script>
+{{/if}}
+<h1 class="text-center text-muted">Users pending approval</h1>
+<p class="text-center text-muted">Click a user to approve</p>
+<table class="table {{#if pendingUsers}}table-hover{{/if}} table-striped">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if pendingUsers}}
+            {{#each pendingUsers}}
+                <tr onclick="document.location = '/admin/approve_user?user_id={{this._id}}'">
+                    <td>{{this.name}}</td>
+                    <td>{{this.email}}</td>
+                </tr>
+            {{/each}}
+        {{else}}
+            <tr>
+                <td colspan="2">No users pending approval</td>
+            </tr>
+        {{/if}}
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<h1 class="text-center text-muted" id="bike">Register a new Bike</h1>
+{{#if bikeErrors}}
+    {{#each bikeErrors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<div class="container-fluid rounded border p-3">
+    <form method="post" action="/admin/create_bike">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Name" name="bikeName">
+        </div>
+        <div class="form-group">
+            <label>Combination</label>
+            <input type="text" class="form-control" placeholder="Combo" name="bikeCombo">
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <select class="form-control custom-select" name="bikeLocation">
+            <option value="" disabled selected hidden>Select a location</option>
+            {{#each locations}}
+                <option value={{this.name}}>{{this.name}}</option>
+            {{/each}}
+            </select>
+        </div>
+        <button type="submit" class="btn">Create Bike</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<h1 class="text-center text-muted" id="location">Register a new Location</h1>
+{{#if locationErrors}}
+    {{#each locationErrors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<div class="container-fluid rounded border p-3">
+    <form method="post" action="/admin/create_location">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Name" name="locationName">
+        </div>
+        <button type="submit" class="btn">Create Location</button>
+    </form>
+</div>
+<br>
+<br>
+<br>

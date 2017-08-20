@@ -1,5 +1,5 @@
 const PORT = 8080;
-const PRIVATE_ADDRESS = "172.31.28.221";
+//const PRIVATE_ADDRESS = "172.31.28.221";
 
 // requires
 var express = require("express");
@@ -17,6 +17,8 @@ var http = require("http");
 var path = require("path");
 var fs = require("fs");
 var User = require(path.join(__dirname, "model", "user"));
+var Bike = require(path.join(__dirname, "model", "bike"));
+var Location = require(path.join(__dirname, "model", "location"));
 
 //create database
 mongoose.Promise = global.Promise;
@@ -101,6 +103,28 @@ app.use(expressValidator({
                     resolve(err);
                 });
             });
+        },
+        bikeExists: function(bikeName) {
+            return new Promise(function(resolve, reject)
+            {
+                Bike.find({"name": bikeName}).limit(1).exec(function(err, docs)
+                {
+                    if (docs.length)
+                        return reject(docs);
+                    resolve(err);
+                });
+            });
+        },
+        locationExists: function(locationName) {
+            return new Promise(function(resolve, reject)
+            {
+                Location.find({"name": locationName}).limit(1).exec(function(err, docs)
+                {
+                    if (docs.length)
+                        return reject(docs);
+                    resolve(err);
+                });
+            });
         }
     }
 }));
@@ -121,7 +145,7 @@ var server = http.createServer(app);
 // 	key: fs.readFileSync(path.join(__dirname, "/ssl/key.pem"))
 // },app);
 
-server.listen(PORT, PRIVATE_ADDRESS, function()
+server.listen(PORT, /*PRIVATE_ADDRESS,*/ function()
 {
 	console.log("Server started on port: " + PORT);
 });

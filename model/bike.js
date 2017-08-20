@@ -18,3 +18,8 @@ var BikeSchema = mongoose.Schema({
 });
 
 var Bike = module.exports = mongoose.model("Bike", BikeSchema);
+
+module.exports.createBike = function(newBike, callback)
+{
+    newBike.save(callback);
+}

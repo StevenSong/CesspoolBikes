@@ -1,9 +1,4 @@
 <h1 class="text-center text-muted">Select a bike to borrow</h1>
-{{#if errors}}
-    {{#each errors}}
-        <div class="alert alert-danger">{{msg}}</div>
-    {{/each}}
-{{/if}}
 <form method="post" action="/borrow">
   <div class="form-group">
     <select class="form-control custom-select" name="bikeSelect">
