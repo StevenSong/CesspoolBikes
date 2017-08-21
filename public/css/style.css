@@ -113,3 +113,27 @@ th, td {
 h1 {
   padding-bottom: 20px;
 }
+
+.bg-grey {
+  background-color: rgba(0,0,0,.025);
+}
+
+.padding {
+  padding: 20px;
+}
+
+.less-bottom {
+  padding-bottom: 0px;
+}
+
+.less-top {
+  padding-top: 0px;
+}
+
+.more-bottom {
+  padding-bottom: 20px;
+}
+
+.no-hover a, a:hover, a:visited, a:active, a:focus{
+  color: #007bff;
+}
