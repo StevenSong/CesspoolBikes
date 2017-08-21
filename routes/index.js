@@ -411,4 +411,10 @@ router.post("/admin/create_location", ensureAuthenticated, ensureAdmin, function
     });
 });
 
+// about
+router.get("/about", function(req, res)
+{
+    res.render("about", {title: "About"});
+});
+
 module.exports = router;
